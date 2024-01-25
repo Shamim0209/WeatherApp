@@ -1,4 +1,6 @@
 import React from "react";
+import "./Forecast.css";
+
 import {
   Accordion,
   AccordionItem,
@@ -34,7 +36,7 @@ export default function Forecast({ data }) {
                   <img
                     alt="weather"
                     className="icon_small"
-                    src={`icons/${item.weather[0].icon}.png`}
+                    src={`WeatherApp/icons/${item.weather[0].icon}.png`}
                   />
                   <label className="day">{forecastDays[idx]}</label>
                   <label className="description">
@@ -50,20 +52,20 @@ export default function Forecast({ data }) {
             <AccordionItemPanel>
               <div className="daily_details">
                 <div className="daily_details_item">
-                  <label>Pressure</label>
-                  <label>{item.main.pressure} hPa</label>
+                  <label>Pressure </label>
+                  <label  className="bold-item">{item.main.pressure} hPa</label>
                 </div>
                 <div className="daily_details_item">
-                  <label>Humidiy</label>
-                  <label>{item.main.humidity} %</label>
+                  <label>Humidiy </label>
+                  <label className="bold-item">{item.main.humidity} %</label>
                 </div>
                 <div className="daily_details_item">
-                  <label>Clouds</label>
-                  <label>{item.clouds.all} okta</label>
+                  <label>Clouds </label>
+                  <label className="bold-item">{item.clouds.all} okta</label>
                 </div>
                 <div className="daily_details_item">
-                  <label>Wind Speed</label>
-                  <label>{item.wind.speed} m/s</label>
+                  <label>Wind Speed </label>
+                  <label className="bold-item">{item.wind.speed} m/s</label>
                 </div>
               </div>
             </AccordionItemPanel>
