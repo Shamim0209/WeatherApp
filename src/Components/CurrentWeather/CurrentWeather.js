@@ -13,7 +13,7 @@ export default function CurrentWeather({ data }) {
           <img
             alt="weather"
             className="weather-icon"
-            src={`WeatherApp/icons/${data.weather[0].icon}.png`}
+            src={`http://Shamim0209.github.io/WeatherApp/icons/${data.weather[0].icon}.png`}
           />
         </div>
         <div className="bottom">

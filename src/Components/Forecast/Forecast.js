@@ -36,7 +36,7 @@ export default function Forecast({ data }) {
                   <img
                     alt="weather"
                     className="icon_small"
-                    src={`WeatherApp/icons/${item.weather[0].icon}.png`}
+                    src={`http://Shamim0209.github.io/WeatherApp/icons/${item.weather[0].icon}.png`}
                   />
                   <label className="day">{forecastDays[idx]}</label>
                   <label className="description">
