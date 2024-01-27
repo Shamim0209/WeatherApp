@@ -34,10 +34,11 @@ export default function Forecast({ data }) {
               <AccordionItemButton>
                 <div className="daily_item">
                   <img
+                    src={`icons/${item.weather[0].icon}.png`}
+                    className="icon-small"
                     alt="weather"
-                    className="icon_small"
-                    src={`http://Shamim0209.github.io/WeatherApp/icons/${item.weather[0].icon}.png`}
                   />
+
                   <label className="day">{forecastDays[idx]}</label>
                   <label className="description">
                     {item.weather[0].description}
@@ -53,7 +54,7 @@ export default function Forecast({ data }) {
               <div className="daily_details">
                 <div className="daily_details_item">
                   <label>Pressure </label>
-                  <label  className="bold-item">{item.main.pressure} hPa</label>
+                  <label className="bold-item">{item.main.pressure} hPa</label>
                 </div>
                 <div className="daily_details_item">
                   <label>Humidiy </label>
